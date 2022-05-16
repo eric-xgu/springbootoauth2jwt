@@ -1,0 +1,24 @@
+server:
+#  servlet:
+#    context-path: /root
+  port: 8080
+spring:
+  main:
+    allow-circular-references: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+#web:
+#  resources:
+#    static-locations: classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/, classpath:/templates/
+  logging:
+    level: debug
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.2.212:3307/security?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: gxx123
+#  redis:
+#    host: 192.168.2.139
+#    port: 6381
+#    password: 123
+
